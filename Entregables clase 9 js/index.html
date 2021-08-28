@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Todo juego</title>
+</head>
+
+<body>
+  <h1>Ludo</h1>
+
+  <!---Seccion de informacion----------->
+
+  <section id=Informacion>
+    <div class="infoJuego">
+      <h2>¿Como jugar?:</h2>
+      <p>Se juega con 1 o 2 dados de 6 caras y el objetivo es trasladar las 4 fichas, (Por ahora 2 jugadores con 1 sola
+        ficha, y sale el numero mayor) desde la partida hasta la llegada. El turno se da por la izquierda y las fichas
+        se mueven de izquierda a derecha,A cada jugador, en su turno, le corresponde lanzar el dado y mover sus fichas
+        si le corresponde.</p>
+    </div>
+  </section>
+
+  <!---Seccion de reglas sencillas----------->
+
+  <section>
+    <div class="jugar">
+      <h2>Pasos</h2>
+    </div>
+  </section>
+
+  <!------Seccion del form de info-------->
+
+  <section>
+    <div class="tablero">
+      <h4>Elegir colores</h4>
+      <form>
+        <input type="checkbox" value="rojo" name="colores" id="color1" class="valores"><label for="">Rojo</label>
+        <input type="checkbox" value="verde" name="colores" id="color2" class="valores"><label for="">Verde</label>
+        <input type="checkbox" value="amarillo" name="colores" id="color3" class="valores"><label
+          for="">Amarillo</label>
+        <input type="checkbox" value="azul" name="colores" id="color4" class="valores"><label for="">Azul</label>
+        <button type="button" id="boton" class="btn btn-warning">enviar</button>
+      </form>
+      <h3>Juegas con:</h3>
+      <ul id="lista" class="list-group"></ul>
+    </div>
+
+  </section>
+
+
+  <!------------Seccion dados ramdom------------>
+
+  <section id="container-dados">
+    <div>
+      <h3>A mover</h3>
+      <button type="button" id="botonDados" class="btn btn-warning">Push here</button>
+    </div>
+    <div class="dados">
+      
+    </div>
+  </section>
+
+  <!------------Seccion de las fichas movibles------------>
+
+  <section id="fichasDeJuego">
+    <img src="./img/tablero_ludo.png" alt="">
+    <div id="arrastrar" style="left:0;top:0;"></div>
+    <div id="arrastrar2" style="left:0;top:0;"></div>
+    <div id="arrastrar3" style="left:0;top:0;"></div>
+    <div id="arrastrar4" style="left:0;top:0;"></div>
+  </section>
+
+
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
