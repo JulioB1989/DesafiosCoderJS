@@ -4,9 +4,6 @@
 /*---------------------Reglas simples-----------------------------*/
 
 
-// ESTE SERIA EL DESAFIO COMPLEMENTARIO, AGREGRO UNA LISTA AL HTML MEDIANTE UN ARRAY, EN ESTE CASO SERIA UNAS REGLAS DE COMO JUGAR
-
-
 const pasos = [ "Escoge tu color", "Lanza los dados","Avanza","Llega a la meta", "Gana", "Diviertete"]; 
 
 let lista = document.querySelector(".jugar")
