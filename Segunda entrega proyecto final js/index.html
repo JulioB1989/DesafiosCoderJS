@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -121,4 +122,129 @@
   <script src="./main.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Todo juego</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img src="./img/logo.png" alt="logo"> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Zona de Distraccion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+   
+  </header>
+  
+  <div class="titlePagina">
+    <h1>Solo Juegos</h1>
+  </div>
+  
+  <!---Seccion de informacion----------->
+
+  <section id=Informacion>
+    <div class="infoJuego">
+      <h2>¿Como jugar?:</h2>
+      <p>Se juega con 1 o 2 dados de 6 caras y el objetivo es trasladar las 4 fichas, desde la partida hasta la llegada. El turno se da por la izquierda y las fichas se mueven de izquierda a derecha,A cada jugador, en su turno, le corresponde lanzar el dado y mover sus fichas si le corresponde.</p>
+    </div>
+  </section>
+
+  <!---Seccion de reglas sencillas----------->
+
+  <section>
+    <div class="jugar">
+      <h2>Pasos</h2>
+    </div>
+  </section>
+
+  <!------Seccion del form de info-------->
+
+  <section>
+    <div class="tablero">
+      <h4>Elegir colores</h4>
+      <form>
+        <input type="checkbox" value="Rojo" name="colores" id="color1" class="valores"><label for="">Rojo</label>
+        <input type="checkbox" value="Verde" name="colores" id="color2" class="valores"><label for="">Verde</label>
+        <input type="checkbox" value="Amarillo" name="colores" id="color3" class="valores"><label
+          for="">Amarillo</label>
+        <input type="checkbox" value="Azul" name="colores" id="color4" class="valores"><label for="">Azul</label>
+        <button type="button" id="boton" class="btn btn-dark">Enviar</button>
+      </form>
+      <h3>Juegas con:</h3>
+      <ul id="lista" class="list-group"></ul>
+    </div>
+
+  </section>
+
+
+  <!------------Seccion de las fichas movibles------------>
+
+  <section id="fichasDeJuego" class="row">
+    <div id="container-dados" class="col-md-5">
+      <div>
+        <h3>A mover</h3>
+        <button type="button" id="botonDados" class="btn btn-dark">Push here</button>
+      </div>
+      <div class="dados">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img src="./img/tablero_ludo.png" alt="tablero">
+    </div>
+    <div class="col-md-1 fichas">
+      <div id="arrastrar" class="red" style="left:0;top:0;">1</div>
+      <div id="arrastrarDos" class="red" style="left:0;top:0;">2</div>
+      <div id="arrastrarTres" class="red" style="left:0;top:0;">3</div>
+      <div id="arrastrarCuatro" class="red" style="left:0;top:0;">4</div>
+      <div id="arrastrar2" class="blue" style="left:0;top:0;">1</div>
+      <div id="arrastrarCinco" class="blue" style="left:0;top:0;">2</div>
+      <div id="arrastrarSeis" class="blue" style="left:0;top:0;">3</div>
+      <div id="arrastrarSiete" class="blue" style="left:0;top:0;">4</div>
+      <div id="arrastrar3" class="green" style="left:0;top:0;">1</div>
+      <div id="arrastrarOcho" class="green" style="left:0;top:0;">2</div>
+      <div id="arrastrarNueve" class="green" style="left:0;top:0;">3</div>
+      <div id="arrastrarDiez" class="green" style="left:0;top:0;">4</div>
+      <div id="arrastrar4" class="yellow" style="left:0;top:0;">1</div>
+      <div id="arrastrarOnce" class="yellow" style="left:0;top:0;">2</div>
+      <div id="arrastrarDoce" class="yellow" style="left:0;top:0;">3</div>
+      <div id="arrastrarTrece" class="yellow" style="left:0;top:0;">4</div>
+    </div>
+
+  </section>
+
+
+
+  <script src="./main.js"></script>
+</body>
+
+>>>>>>> 1bca7168613af3756935bb1ed957bc900f07391f
 </html>

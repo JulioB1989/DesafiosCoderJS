@@ -110,8 +110,22 @@ let mover413= new movimiento (document.getElementById("arrastrarTrece"));
 /*----Uso de Storage y JSON para guardar los datos y obtenerlos-------*/
 
 
-const premioGanador = { primero: "50000", segundo:"10000" }
+const premioGanador = { primero: "50000", segundo:"10000" , tercero:"0", cuarto:"0"}
 localStorage.setItem ('premio', JSON.stringify(premioGanador));
 
 const premioGuardado = localStorage.getItem('premio');
 console.log ('premioObtenido: ', JSON.parse(premioGuardado));
+
+
+/*----------------------DESAFIO CLASE 12---------------*/
+let cosa   = [{ id: 1,  nombre: "Ganador", premio: 50000 }, // DESAFIO CLASE 12 INCORPORANDO LA INFORMACION AL DOM DE LOS PREMIOS ALMECENADOS EN STORAGE
+{id: 2, nombre:"Segundo", premio: 10000},
+{id: 3, nombre:"Tercero", premio: 0},
+{id: 4, nombre:"Cuarto", premio: 0},]
+
+for (let ganadores of cosa)
+$("#app").append(`<div><h3> N°: ${ganadores.id}</h3>
+                  <p>  Lugar: ${ganadores.nombre}</p>
+                  <span> Premio: ${ganadores.premio}</span></div>`);
+
+

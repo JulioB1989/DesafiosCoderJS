@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -137,4 +138,145 @@ label, input {
 
   body{
     overflow-x: hidden;
+=======
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+
+  padding: 15px 30px 15px 30px;
+}
+
+body {
+
+  background-color:rgb(178, 243, 56);
+}
+
+nav {
+
+  height: 150px;
+}
+
+nav img{
+
+  height: 100px;
+  width: 150px;
+}
+
+.titlePagina {
+
+  background-image: url(./img/back_table.jpg);
+  background-size: cover;
+  height: 300px;
+}
+
+h1{
+
+  padding-top: 190px;
+  padding-left: 15px;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+
+}
+
+.fichas div {
+
+font-weight: bold;
+
+} 
+
+#fichasDeJuego{
+
+  justify-content: center;
+}
+
+#fichasDeJuego img {
+
+  width: 600px;
+  height: 600px;
+    
+}
+.dados li {
+  font-size: 12px;
+  text-transform: capitalize;
+  font-style: oblique;
+  list-style: square;
+  padding: 3px;
+}
+
+label, input {
+
+  font-size: 20px;
+  padding: 3px;
+}
+
+
+.red {
+    text-align:center;
+    background-color: red;
+    width:30px;
+    height:30px;
+    border:3px solid #0a0202;
+    border-radius:50px;
+    position:relative;
+    cursor:pointer;
+    
+ 
+  }
+  .blue {
+    text-align:center;
+    background-color: blue;
+    width:30px;
+    height:30px;
+    border:3px solid #0a0202;
+    border-radius:50px;
+    position:relative;
+    cursor:pointer;
+ 
+  }
+  .green {
+    text-align:center;
+    background-color: rgb(19, 209, 19);
+    width:30px;
+    height:30px;
+    border:3px solid #0a0202;
+    border-radius:50px;
+    position:relative;
+    cursor:pointer;
+ 
+  }
+  .yellow {
+    text-align:center;
+    background-color: yellow;
+    width:30px;
+    height:30px;
+    border:3px solid #0a0202;
+    border-radius:50px;
+    position:relative;
+    cursor:pointer;
+ 
+  }
+
+
+  .dados {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .dados p {
+
+    font-weight: bold;
+
+
+  }
+
+  body{
+    overflow-x: hidden;
+>>>>>>> 1bca7168613af3756935bb1ed957bc900f07391f
   }
