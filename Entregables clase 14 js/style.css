@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    background-color: beige;
+}
+
+
+.container {
+
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container img {
+
+    border-radius: 50%;
+    border: solid 1px black;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.container h3 {
+    font-size: 25px;
+    padding: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.container p {
+
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
