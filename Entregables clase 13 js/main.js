@@ -60,10 +60,9 @@ dados.addEventListener('click', numeroRamdom)
 function numeroRamdom () { 
     
   let numeroDados = (Math.ceil(Math.random() * 6));
-  let numeroIngresado = document.createElement ("li");
+  let numeroIngresado = numero;
   numeroIngresado.innerHTML = numeroDados;
-  numero.appendChild(numeroIngresado);
-  
+
 }
  
 
